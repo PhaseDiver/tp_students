@@ -54,11 +54,11 @@ if ($result->num_rows >= 0) {
 } else {
     echo "Aucun résultats ";
 }
-$math = mysql_get_var("SELECT note FROM math WHERE id_student={$id}");
-$uml = mysql_get_var("SELECT note FROM uml WHERE id_student={$id}");
-$html = mysql_get_var("SELECT note FROM html WHERE id_student={$id}");
-$php = mysql_get_var("SELECT note FROM php WHERE id_student={$id}");
-$plp= mysql_get_var("SELECT note FROM plannification_projet WHERE id_student={$id}");
+$math = mysql_get_var("SELECT notes FROM math WHERE id_student={$id}");
+$uml = mysql_get_var("SELECT notes FROM uml WHERE id_student={$id}");
+$html = mysql_get_var("SELECT notes FROM html WHERE id_student={$id}");
+$php = mysql_get_var("SELECT notes FROM php WHERE id_student={$id}");
+$plp= mysql_get_var("SELECT notes FROM plannification_projet WHERE id_student={$id}");
 //$Name = ucfirst($Name);
 echo "
 <title>notes - {$Name}</title>
