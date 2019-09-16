@@ -84,7 +84,6 @@ echo "
 
 <tbody>";
 
-//<th scope='col' onclick='moyenne({$math},{$uml},{$html},{$php},{$plp});' id='calc'>calcul moyenne</th>
 echo "
 <tr>
 <th scope='row'>{$id}</th>
@@ -93,7 +92,7 @@ echo "
 <td id='html'>{$html}</td>
 <td id='php'>{$php}</td>
 <td id='plp'>{$plp}</td>
-<td id='moyenne_field'></td>
+<td id='mean_field'></td>
 </tr>
 ";
 
@@ -107,7 +106,7 @@ $conn->close();
     var moyenne = (math +plp   + html + php + uml) / 5;
 
    
-    $("#moyenne_field").text(moyenne);
+    $("#mean_field").text(moyenne);
    
    if (moyenne>=13)
    {
